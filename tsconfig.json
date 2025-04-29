@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@common/*": ["src/common/*"],
+			"@config/*": ["src/config/*"],
+			"@data/*": ["src/data/*"],
+			"@domain/*": ["src/domain/*"],
+			"@infrastructure/*": ["src/infrastructure/*"],
+			"@presentation/*": ["src/presentation/*"],
+			"@types/*": ["src/types/*"]
+		},
+		"target": "es2016",
+		"module": "commonjs",
+		"rootDir": "src",
+		"outDir": "dist/",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"skipLibCheck": true
+	},
+	"include": ["src", "src/types/"]
+}
