@@ -47,8 +47,8 @@ export class Server {
 		this.app.use(express.json()); // raw
 		this.app.use(express.urlencoded({ extended: true })); // x-www-form-urlencoded
 
-		//* Routes
-		this.app.use(this.routes);
+		//* Logger
+		// this.app.use(pinoHttp({ logger }));
 
 		//* Swagger
 		this.app.use(
@@ -57,8 +57,8 @@ export class Server {
 			swaggerUi.setup(swaggerSpec),
 		);
 
-		//* Logger
-		this.app.use(pinoHttp({ logger }));
+		//* Routes
+		this.app.use(this.routes);
 
 		this.app.listen(this.port, () => {
 			logger.info(`Server running on port ${this.port}`);

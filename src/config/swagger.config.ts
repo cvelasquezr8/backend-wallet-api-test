@@ -20,5 +20,5 @@ export const swaggerSpec = swaggerJSDoc({
 		},
 		security: [{ bearerAuth: [] }],
 	},
-	apis: ['./src/presentation/**/*.ts'],
+	apis: ['./dist/presentation/**/*.js'],
 });
